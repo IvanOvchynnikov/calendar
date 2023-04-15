@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: whitesmoke;
     display: flex;
@@ -5,44 +11,36 @@ body{
     align-items: center;
     height: 100vh;
 }
-.main_form{
-    box-sizing: border-box;
 
+.main_form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 40px;
-
-
-    position: relative;
-    width: 350px;
+    padding: 40px;    
     min-height: 400px;
-
     background: #1E1F25;
     border: 1px solid #090A0C;
     box-shadow: 0px 4px 32px rgba(170, 170, 170, 0.03);
     border-radius: 12px;
 }
-.cur_month{
 
+.cur_month{
     display: flex;
     align-items: center;
     text-align: center;
-
     color: white;
-    margin-left: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-size: 17px;
     line-height: 15px;
-
-
 }
+
 .monthSelector{
     height: 50px;
     width: 300px;
     display: flex;
+    justify-content: space-between;
 }
+
 .back_button,.forward_button{
     background: #1E1F25;
     border: 0;
@@ -52,34 +50,42 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-
-    margin-left: 100px;
+    gap: 30px;
 }
 
 .Calendar{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-
-    width: 300px;
     min-height: 200px;
-
 }
+
+.Calendar{
+    margin-top: 10px;
+}
+
 .names_days{
     display: flex;
-    margin: 0 -5px;
-    width: 260px;
+    justify-content: space-between;
 }
 
 .day{
-    flex: 0px;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Inter';
     font-weight: 500;
-
+    width: 20px;
+}
+.week{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.day_number{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    color: #CCCCCC;
+    width: 25px;
+    text-align: center;
 }
 
 
