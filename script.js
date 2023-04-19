@@ -72,3 +72,15 @@ function AppearenceForward(curYear,curMonth){
     });
     cur=new Date(curYear,cur.getMonth()-1);
 }
+
+document.querySelector(".back_button").onclick=()=>{
+
+    curMonth=curMonth-1;
+    if(curMonth<0)
+    {
+        curYear--;
+        curMonth=11;
+    }
+    AppearenceForward(curYear,curMonth);
+}
+
